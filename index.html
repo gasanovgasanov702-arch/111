@@ -24,8 +24,20 @@
         <li>Экономическая зависимость: Зависимость от онлайн-покупок, финансовые проблемы из-за чрезмерного использования технологий.</li>
         <li>Смартфон-зависимость: Физическая привязанность к телефону.</li>
     </ol></big>
-     <img src="https://tvoe-budushee.ru/wp-content/uploads/2019/07/internet-zavisimost-e1562741609126.jpg" alt="Image 1" border="100" align="center" color="black">
-     <iframe src="https://forecast7.com/en/43d24n76d92/almaty/" width="500" height="400"></iframe>
+     <img src="https://tvoe-budushee.ru/wp-content/uploads/2019/07/internet-zavisimost-e1562741609126.jpg" alt="Image 1" border="5" align="center" color="black">
+     <div class="weather-widget">
+  <h2>Алматы</h2>
+  <p id="temp">Загрузка...</p>
+</div>
+
+<script>
+fetch("https://api.open-meteo.com/v1/forecast?latitude=43.24&longitude=76.92&current_weather=true")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("temp").innerText =
+      "🌡 " + data.current_weather.temperature + "°C";
+  });
+</script>
      
 </body>
 </html>
