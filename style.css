@@ -26,9 +26,9 @@ ol {
 }
 
 @keyframes color-change {
-  0%   { padding: 10px; background-color: blue; }
-  50%  { padding: 10px; background-color: red; }
-  100% { padding: 10px; background-color: blue; }
+  0%   { color: blue; }
+  50%  { color: red; }
+  100% { color: blue; }
 }
 
 font{
@@ -39,8 +39,17 @@ font{
      
         
 }
-font , h1 , h2, :hover {
+font:hover {
   animation: color-change 8s infinite;
+}
+.weather-widget {
+  width: 500px;
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1900ff, hsl(225, 100%, 50%));
+  color: white;
+  font-family: Arial;
+  box-shadow: 0 100px 150px rgba(0,0,0,0.2);
 }
 
 
