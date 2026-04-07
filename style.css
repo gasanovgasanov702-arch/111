@@ -1,0 +1,46 @@
+body {
+     /* Семейство шрифтов */
+    font-size: 20px; /* Размер основного шрифта в <p></p>  */
+    background-color: #313131; /* Цвет фона веб-страницы */
+    color: #d1d1d1; /* Цвет основного текста */ 
+}
+h1 {
+    color: #08d5fd; /* Цвет заголовка */
+    font-size: 50px; /* Размер шрифта в пунктах */
+    font-family: Impact, fantasy; /* Семейство шрифтов */
+}
+h2 {
+    color: #08d5fd; /* Цвет заголовка */
+    font-size: 50px; /* Размер шрифта в пунктах */
+    font-family: Impact, fantasy; /* Семейство шрифтов */
+}
+ul {
+    color: #0048ff; /* Цвет текста в списке */
+    font-size: 30px; /* Размер шрифта в пунктах */
+        font-family: 'Segoe UI', Tahoma, Geneva, Courier, monospace; /* Современный и чистый шрифт */
+}
+ol {
+    color: #0048ff; /* Цвет текста в списке */
+    font-size: 30px; /* Размер шрифта в пунктах */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Courier, monospace; /* Стильный и читаемый шрифт */
+}
+
+@keyframes color-change {
+  0%   { padding: 10px; background-color: blue; }
+  50%  { padding: 10px; background-color: red; }
+  100% { padding: 10px; background-color: blue; }
+}
+
+font{
+    /*color: #ff0000;  Цвет текста в списке */
+    font-size: 30px; /* Размер шрифта в пунктах */
+    font-family: Courier, monospace; /* Семейство шрифтов */
+    
+     
+        
+}
+font , h1 , h2, :hover {
+  animation: color-change 8s infinite;
+}
+
+
